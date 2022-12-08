@@ -1,0 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	/* font-size: 10px; */
+	/* 10px / 16px = 0.625 = 62.5% */
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
+
+main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-family: "Red Hat Display", sans-serif;
+	margin: 10rem;
+}
+
+.background-picture {
+	position: absolute;
+	z-index: -1;
+	width: 144rem;
+	height: 80rem;
+	background-color: hsl(225, 100%, 98%);
+}
+
+.card {
+	width: 45rem;
+	height: 70rem;
+	border-style: none;
+	border-radius: 20px;
+	overflow: hidden;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+
+	text-align: center;
+	background-color: #fff;
+
+	box-shadow: 0rem 2rem 6rem 1rem rgb(0, 0, 0, 0.2);
+}
+
+.photo {
+	margin-bottom: 3rem;
+}
+
+.plan-box {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	border-radius: 10px;
+	background-color: #f7f7f7;
+	width: 34rem;
+	height: 8rem;
+}
+
+.icon {
+	margin: 0 2rem;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	border-style: none;
+	border-radius: 10px;
+	width: 34rem;
+	height: 5rem;
+	font-family: inherit;
+
+	cursor: pointer;
+}
+
+.btn--proceed {
+	background-color: hsl(245, 75%, 52%);
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.6rem;
+}
+
+.btn--proceed:hover,
+.btn--proceed:active {
+	transition: all 0.3s;
+	transform: translateY(-10%);
+	box-shadow: 0rem 1rem 1rem 0.4rem rgba(75, 86, 158, 0.2);
+}
+
+.btn-cancel {
+	background-color: #fff;
+	font-weight: 900;
+	font-size: 1.2rem;
+}
+
+.btn-change {
+	margin: 0 1rem;
+	font-family: inherit;
+	border-style: none;
+	background-color: #f7f7f7;
+	font-weight: 700;
+	color: hsl(245, 75%, 52%);
+	display: inline-block;
+	cursor: pointer;
+}
+
+.heading {
+	font-size: 3rem;
+	font-weight: 900;
+	color: hsl(223, 47%, 23%);
+}
+
+.content {
+	font-size: 1.8rem;
+	font-weight: 500;
+	line-height: 1.4;
+	color: hsl(224, 23%, 55%);
+	padding: 0 2rem;
+}
+
+.plan-price {
+	text-align: left;
+}
+
+.plan-heading {
+	margin-bottom: 0.8rem;
+}
+
+.price {
+	font-size: 1.4rem;
+	color: hsl(224, 23%, 55%);
+	margin-right: 10rem;
+}
